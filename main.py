@@ -31,7 +31,10 @@ class XmlInputer():
         self.soup = BeautifulSoup(xml, features="html.parser")
 
     def read_input(self) -> Message:
-        return TextMessage(self.soup.p.string)
+        p = self.soup.p
+        if p is None:
+            raise RuntimeError("Error reading message")
+        return TextMessage(p.string)
 
 
 class ConsoleOutputer():
