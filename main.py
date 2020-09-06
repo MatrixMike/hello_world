@@ -48,7 +48,7 @@ def do_work(inputer: Inputer, outputer: Outputer) -> None:
 
 
 def main() -> None:
-    inputer = XmlInputer("<p>Hello World</p>")
+    inputer = XmlInputer("<p>Hello world!</p>")
     outputer = ConsoleOutputer()
     do_work(inputer, outputer)
 
