@@ -1,5 +1,7 @@
 # Hello World
 
+![Python package](https://github.com/brianmay/hello_world/workflows/Python%20package/badge.svg)
+
 To run tests:
 
 ```
